@@ -1,247 +1,221 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="id">
 <head>
-    <title>Portofolio Keza UgraShena A12.2025.07307</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portofolio Keza UgraShena, mahasiswa Sistem Informasi Universitas Dian Nuswantoro.">
+    <title>Portofolio Keza UgraShena</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Halaman -->
+    <!-- Navigasi Utama -->
     <header>
-        <center>
-            <h1>PORTOFOLIO KEZA UGRASHENA</h1>
-            <h3>Program Studi Sistem Informasi - Universitas Dian Nuswantoro</h3>
-            <!-- membuat garis-->
-            <hr size="3" color="black" width="100%">
-        </center>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" aria-label="Navigasi utama">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#beranda">Keza UgraShena</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kemampuan">Kemampuan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Navigasi Utama -->
-    <nav>
-        <center>
-            <a href="#profil">Profil Saya</a> |
-            <a href="#pendidikan">Riwayat Pendidikan</a> |
-            <a href="#keahlian">Keahlian & Hobi</a> |
-            <a href="#proyek">Proyek Terkait</a> |
-            <a href="#kontak">Kontak</a>
-        </center>
-    </nav>
+    <main>
+        <!-- Bagian Beranda (Hero) -->
+        <section id="beranda" class="hero-section d-flex align-items-center" aria-labelledby="judul-utama">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-7">
+                        <span class="badge bg-primary-subtle text-primary mb-2 px-3 py-2 rounded-pill fw-semibold">
+                            Mahasiswa Sistem Informasi — Universitas Dian Nuswantoro
+                        </span>
+                        <h1 id="judul-utama" class="display-4 fw-bold mb-3">Halo, saya Keza UgraShena.</h1>
+                        <p class="lead text-secondary mb-4">
+                            Mahasiswa yang tertarik pada pengembangan web, perancangan basis data, dan analisis sistem informasi.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#proyek" class="btn btn-primary btn-lg px-4">Lihat proyek</a>
+                            <a href="#kontak" class="btn btn-outline-secondary btn-lg px-4">Hubungi saya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <figure class="figure m-0">
+                            <img src="image/1.jpeg" class="figure-img img-fluid rounded-4 shadow-lg profile-img" alt="Keza di Sabana Cikasur" width="400">
+                            <figcaption class="figure-caption mt-2 fst-italic">Belajar, merancang, dan terus bertumbuh.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <br>
+        <!-- Bagian Tentang -->
+        <section id="tentang" class="py-5 bg-white" aria-labelledby="judul-tentang">
+            <div class="container py-4">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <h2 id="judul-tentang" class="fw-bold mb-4 section-title">Tentang saya</h2>
+                        <p>Saya adalah mahasiswa aktif Program Studi Sistem Informasi di Fakultas Ilmu Komputer, Universitas Dian Nuswantoro.</p>
+                        <p>Saya memiliki ketertarikan pada pengembangan aplikasi web, perancangan basis data, dan analisis sistem informasi. Saya senang mempelajari teknologi baru, mengembangkan kemampuan pemrograman, serta merancang sistem yang mudah digunakan.</p>
+                        <p>Halaman ini berawal dari latihan memahami struktur HTML5, elemen semantik, tabel, dan formulir. Saya terus mengembangkan pengetahuan melalui tugas dan proyek perkuliahan.</p>
 
-    <hr size="1" color="gray" width="100%">
+                        <h3 class="h5 fw-bold mt-4 mb-3">Minat</h3>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item px-0">🚀 Eksplorasi aplikasi web</li>
+                            <li class="list-group-item px-0">📖 Membaca dokumentasi</li>
+                            <li class="list-group-item px-0">✍️ Menulis</li>
+                        </ul>
+                    </div>
 
-    <!-- Bagian Profil -->
-    <section id="profil">
-        <h2>A. Profil Saya</h2>
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-sm p-4 rounded-4 bg-light">
+                            <h3 class="h4 fw-bold mb-4">Pendidikan</h3>
+                            <dl class="mb-3">
+                                <dt class="text-primary fw-semibold">2025 — sekarang</dt>
+                                <dd class="mb-3 pb-3 border-bottom">
+                                    Sistem Informasi, Fakultas Ilmu Komputer — 
+                                    <a href="https://dinus.ac.id" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Universitas Dian Nuswantoro</a>
+                                </dd>
+                                <dt class="text-primary fw-semibold">2022 — 2025</dt>
+                                <dd class="mb-0">Sekolah Menengah Atas, Jurusan IPS — MA Darul Hikmah</dd>
+                            </dl>
+                            <a href="https://mhs.dinus.ac.id" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-2">
+                                Portal akademik Siadin &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Gambar dengan atribut HTML bawaan (align="left" untuk perataan teks) -->
-        <!-- hspace="15" memberikan jarak horizontal 15 piksel antara gambar dan elemen/teks di sekitarnya. -->
-        <img src="images/fotoku.jpg" alt="Maaf Foto belum bisa di akses" width="150" height="180" align="left" hspace="20">
+        <!-- Bagian Kemampuan -->
+        <section id="kemampuan" class="py-5 bg-light" aria-labelledby="judul-kemampuan">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 id="judul-kemampuan" class="fw-bold section-title">Kemampuan yang sedang saya pelajari</h2>
+                    <p class="text-secondary">Teknologi dan konsep yang tercantum dalam perjalanan belajar saya.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 skill-card">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-primary mb-2">Pengembangan web</h3>
+                                <p class="card-text text-secondary mb-0">HTML, CSS, Bootstrap, PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 skill-card">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-primary mb-2">Basis data</h3>
+                                <p class="card-text text-secondary mb-0">MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 skill-card">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-primary mb-2">Pemodelan sistem</h3>
+                                <p class="card-text text-secondary mb-0">DFD, ERD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Halo! Nama saya Shena. Saya adalah mahasiswa aktif Program Studi
-            Sistem Informasi di Fakultas Ilmu Komputer. Saya memiliki ketertarikan
-            yang besar dalam bidang pengembangan aplikasi web, perancangan basis data,
-            serta analisis sistem informasi. Saya senang mempelajari teknologi baru
-            yang dapat membantu menyelesaikan berbagai permasalahan di bidang teknologi
-            informasi. Selain itu, saya juga tertarik untuk mengembangkan kemampuan
-            dalam pemrograman dan pembuatan sistem yang mudah digunakan. Selama menjadi
-            mahasiswa, saya terus berusaha meningkatkan pengetahuan dan keterampilan
-            melalui berbagai tugas dan proyek perkuliahan.
-        </p>
+        <!-- Bagian Proyek -->
+        <section id="proyek" class="py-5 bg-white" aria-labelledby="judul-proyek">
+            <div class="container py-4">
+                <h2 id="judul-proyek" class="fw-bold mb-4 section-title">Proyek akademik</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <article class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                            <figure class="m-0">
+                                <img src="image/project sendiri.png" class="card-img-top project-img" alt="Latar galaksi berbintang untuk proyek latihan web" width="600" loading="lazy">
+                                <figcaption class="bg-dark text-white-50 small px-3 py-1">Latihan pemrograman web</figcaption>
+                            </figure>
+                            <div class="card-body p-4">
+                                <h3 class="h4 card-title fw-bold">Tugas Pemrograman Web 1</h3>
+                                <p class="card-text text-secondary">
+                                    Halaman profil dan formulir interaktif yang mengeksplorasi elemen HTML semantik, tabel terstruktur, dan elemen input formulir.
+                                </p>
+                                <p class="mb-4"><strong>Teknologi:</strong> <span class="badge bg-secondary">HTML5</span> <span class="badge bg-secondary">Formulir</span> <span class="badge bg-secondary">Struktur Semantik</span></p>
+                                <a href="#kontak" class="btn btn-primary">Tanya tentang proyek</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Halaman web ini dibuat menggunakan HTML5 murni tanpa menggunakan CSS
-            untuk memahami instruksi pembuatan struktur dasar web. Dalam pembuatan
-            halaman ini, saya menggunakan berbagai tag HTML untuk menyusun struktur
-            dan menampilkan informasi. Saya juga mempelajari fungsi dari setiap tag
-            agar dapat digunakan sesuai dengan kebutuhan halaman web. Pembuatan
-            halaman ini menjadi salah satu latihan untuk memahami dasar-dasar
-            pengembangan web. Dengan latihan ini, saya berharap dapat memahami HTML
-            dengan lebih baik dan mampu menggunakannya dalam membuat halaman web
-            yang lebih kompleks.
-        </p>
-
-        <!-- <br clear="all"> membuat elemen berikutnya turun ke bawah dan tidak lagi dipengaruhi oleh gambar yang di-float. -->
-        <br clear="all">
-    </section>
-
-    <br>
-
-    <!-- Bagian Pendidikan (Tabel Murni) -->
-    <section id="pendidikan">
-        <h2>B. Riwayat Pendidikan</h2>
-
-        <!-- Tabel menggunakan atribut HTML bawaan: border, cellpadding, cellspacing -->
-        <table border="1" cellpadding="8" cellspacing="0" width="100%">
-            <tr bgcolor="#cccccc">
-                <th>Tingkat Pendidikan</th>
-                <th>Nama Instansi / Sekolah</th>
-                <th>Tahun</th>
-                <th>Keterangan</th>
-            </tr>
-
-            <tr>
-                <td>Sekolah Menengah Atas (SMA)</td>
-                <td>Ma Darul Hikmah</td>
-                <td>2022-2025</td>
-                <td>Jurusan IPS/</td>
-            </tr>
-
-            <tr>
-                <td>Perguruan Tinggi</td>
-                <td>
-                    <a href="https://dinus.ac.id" target="_blank">
-                        Universitas Dian Nuswantoro
-                    </a>
-                </td>
-                <td>2025</td>
-                <td>Sistem Informasi</td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-
-    <!-- Bagian Keahlian & Hobi (List HTML) -->
-    <section id="keahlian">
-        <h2>C. Keahlian & Hobi</h2>
-
-        <h3>1. Keahlian Utama</h3>
-        <ul>
-            <li>Pemrograman Web Dasar (HTML, PHP)</li>
-            <li>Pengelolaan Database MySQL</li>
-            <li>Pemodelan Sistem (DFD & ERD)</li>
-        </ul>
-
-        <h3>2. Hobi & Minat</h3>
-        <ol>
-            <li>Membaca dokumentasi di
-                <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
-            </li>
-            <li>Eksplorasi pembuatan aplikasi web</li>
-            <li>Menulis</li>
-        </ol>
-    </section>
-
-    <br>
-
-    <!-- Bagian Proyek (Article & Aside) -->
-    <section id="proyek">
-        <h2>D. Proyek & Aktivitas Akademik</h2>
-
-        <article>
-            <h3>Tugas Pemrograman Web 1</h3>
-            <p>
-                Proyek ini adalah pembuatan halaman profil dan form interaktif menggunakan
-                struktur elemen semantik HTML, tabel terstruktur, dan beberapa elemen input form.
-            </p>
-        </article>
-
-        <!-- Element Aside -->
-        <aside>
-            <hr>
-            <p>
-                <b>Catatan Kampus:</b> Informasi jadwal perkuliahan dan kurikulum dapat dilihat di portal
-                <a href="https://mhs.dinus.ac.id" target="_blank">Siadin Udinus</a>.
-            </p>
-            <hr>
-        </aside>
-    </section>
-
-    <br>
-
-    <!-- Bagian Form Kontak -->
-    <section id="kontak">
-        <h2>E. Form Kontak Pengunjung</h2>
-        <p>Silakan isi form di bawah ini untuk mengirimkan pesan:</p>
-
-        <!-- Form murni HTML -->
-        <form action="simpan.php" method="post">
-            <table border="0" cellpadding="5">
-
-                <tr>
-                    <td><label for="fnama">Nama Lengkap</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="text" id="fnama" name="fnama" size="30" required>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="femail">Email</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="email" id="femail" name="femail" size="30" required>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Jenis Kelamin</td>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" id="pria" name="fjkel" value="Pria">
-                        <label for="pria">Pria</label>
-
-                        <input type="radio" id="wanita" name="fjkel" value="Wanita">
-                        <label for="wanita">Wanita</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="fprodi">Program Studi</label></td>
-                    <td>:</td>
-                    <td>
-                        <select id="fprodi" name="fprodi">
-                            <option value="SI">Sistem Informasi S1</option>
-                            <option value="TI">Teknik Informatika S1</option>
-                            <option value="DKV">Desain Komunikasi Visual S1</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Hobi / Minat</td>
-                    <td>:</td>
-                    <td>
-                        <input type="checkbox" id="coding" name="fhobi[]" value="Coding">
-                        <label for="coding">Coding</label>
-
-                        <input type="checkbox" id="reading" name="fhobi[]" value="Membaca">
-                        <label for="reading">Membaca</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="fpesan">Pesan</label></td>
-                    <td>:</td>
-                    <td>
-                        <textarea id="fpesan" name="fpesan" rows="4" cols="32"></textarea>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Kirim Pesan">
-                        <input type="reset" value="Batal">
-                    </td>
-                </tr>
-
-            </table>
-        </form>
-    </section>
-
-    <br>
-    <hr size="1" color="black">
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="py-5 bg-light" aria-labelledby="judul-kontak">
+            <div class="container py-4">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <h2 id="judul-kontak" class="fw-bold mb-3 section-title">Ada yang ingin dibicarakan?</h2>
+                        <p class="text-secondary">Silakan tinggalkan pesan. Saya senang menerima pertanyaan atau berbagi cerita seputar dunia teknologi.</p>
+                        <p class="mt-4">
+                            <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer" class="link-primary fw-semibold text-decoration-none">
+                                📚 Dokumentasi yang saya baca: W3Schools &rarr;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h3 class="h5 fw-bold mb-2">Contoh formulir pesan</h3>
+                            <p class="text-muted small mb-4">Formulir ini hanya contoh HTML dan belum terhubung ke layanan pengiriman pesan.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label fw-semibold">Nama lengkap</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" autocomplete="name" placeholder="Masukkan nama lengkap Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-semibold">Alamat email</label>
+                                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="nama@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pesan" class="form-label fw-semibold">Pesan</label>
+                                    <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary px-4">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <center>
-            <p>&copy; 2026 Keza UgraShena - Pemrograman Web Sistem Informasi Universitas Dian Nuswantoro</p>
-        </center>
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+            <div>
+                <p class="mb-1 fw-semibold">Mahasiswa Sistem Informasi — Universitas Dian Nuswantoro</p>
+                <p class="mb-0 text-white-50 small">&copy; 2026 Keza UgraShena</p>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a href="#beranda" class="btn btn-outline-light btn-sm">Kembali ke atas &uarr;</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
