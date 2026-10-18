@@ -1,0 +1,51 @@
+/* Mengatur font utama dan smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Agar judul section tidak tertutup navbar saat diklik */
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Bagian Beranda / Hero */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.profile-img {
+    max-height: 420px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
+}
+
+/* Efek garis bawah pada judul section */
+.section-title {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* Efek interaktif pada kartu kemampuan */
+.skill-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Gambar proyek */
+.project-img {
+    max-height: 320px;
+    object-fit: cover;
+}
